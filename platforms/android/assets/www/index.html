@@ -9,60 +9,66 @@
         <link rel="stylesheet" href="./fonts/style.css">
     </head>
     <body>
-        <div class="row encabezado">
+       
 
-            <div class=" text-center col-xs-8 col-xs-offset-2">
+            <div class=" text-center col-xs-12 encabezado">
                 <h4>Agenda</h4>
             </div>
-
-        </div>
 
 
         <div class="container">
 
 
+            <div class="row">
 
 
-            <div class="" id="resultado">
+
+
+                <div class="col-xs-8">
+
+                    <div class="menu fixed fondoRojo">
+                        <div class="col-xs-2">
+                            <div class="circulo fondoBlanco boton"><span class="icon-spinner9 colorNegro"></span></div>
+
+                        </div>
+                        <div class="col-xs-10 fila colorBlanco boton">
+                            <b>Actualizar</b>
+                        </div>
+
+
+                        <a href="nuevo.html">
+                            <div class="col-xs-2 ">
+                                <div class="circulo fondoBlanco "><span class="icon-user-plus colorNegro"></span></div>
+
+                            </div>
+                            <div class="col-xs-10 fila colorBlanco">
+                                <b>Agregar</b>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="floatcontainerleft">
+
+                        <div class="col-xs-3 col-xs-1-offset fixed">
+                            <div class="circulo fondoRojo colorBlanco  bordeBlanco" id="clic">+</div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="contenido" id="resultado">
 
             </div>
             <div class="margen"></div>
 
 
 
-            <div class="row">
 
-                 <div class="col-xs-2">
-                    <div class="circulo-big fondoRojo colorBlanco transparente" id="clic">+</div>
-                </div>
-                <div class="col-xs-8" id="menu">
-
-       
-                        <div class="col-xs-2">
-                            <div class="circulo fondoBlanco boton"><span class="icon-spinner9 colorNegro"></span></div>
-
-                        </div>
-                        <div class="col-xs-10 fila">
-                            <b>Actualizar</b>
-                        </div>
-
-                   
-                   
-                        <a href="nuevo.html">
-                            <div class="col-xs-2">
-                                <div class="circulo fondoBlanco "><span class="icon-user-plus colorNegro"></span></div>
-
-                            </div>
-                            <div class="col-xs-10 fila">
-                                <b>Agregar</b>
-                            </div>
-                        </a>
-
-                </div>
-              
-
-
-            </div>
 
 
 
@@ -76,19 +82,21 @@
 
             $(document).ready(function(){
 
-                $("#menu").animate({
+                $(".menu").animate({
                     height: 'hide'
                 });
 
             });
             $( "#clic" ).click(function() {
-                $( "#menu" ).animate({
+                $( ".menu" ).animate({
 
                     height: "toggle",
 
 
                 });
             });
+            
+            
 
 
 
