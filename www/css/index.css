@@ -173,6 +173,8 @@ h1 {
     background-color: #d02929;
     color:#fff;
     height: 50px;
+    z-index: 9999;
+    position: fixed;
 }
 
 .vertical{
@@ -203,6 +205,10 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
     padding:10px;
 }
 
+.menu{
+    margin-top: 45px;
+}
+
 .inicial{
     display: block;
     width: 35px;
@@ -213,7 +219,7 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
     border: 1px solid rgba(0,0,0,0.2);
 }
 .contenido{
-    margin: 50px auto;
+    margin-top: 50px;
 }
 
 a{
@@ -235,16 +241,20 @@ a{
     width:40px;
     height:40px;
     border-radius:50%;
-    border: 1px solid #fff;
     color:#fff;
     line-height:40px;
     font-size: 20px;
     text-align:center;
 }
 
-.menu{
-    z-index: 9999;
-    position: fixed;
+
+.floatcontainer {
+    float: right;
+}
+
+.floatcontainerleft {
+    float: left;
+    margin-top:10px;
 }
 
 .fixed{
@@ -252,6 +262,15 @@ a{
     position: fixed;
 }
 
+.absolute{
+    position:absolute
+}
+
 .transparente{
     opacity: 0.4;
 }
+
+.bordeBlanco{
+    border: 1px solid #fff;
+}
+

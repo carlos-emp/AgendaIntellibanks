@@ -9,61 +9,68 @@
         <link rel="stylesheet" href="./fonts/style.css">
     </head>
     <body>
-        <div class="row encabezado">
+       
 
-            <div class=" text-center col-xs-8 col-xs-offset-2">
+            <div class=" text-center col-xs-12 encabezado">
                 <h4>Agenda</h4>
             </div>
-           
-        </div>
 
+<div class="floatcontainerleft">
 
+                        <div class="col-xs-3 col-xs-1-offset fixed">
+                            <div class="circulo fondoRojo colorBlanco  bordeBlanco" id="clic">+</div>
+                        </div>
+                    </div>
         <div class="container">
 
 
-          
+            <div class="row">
 
-            <div class="" id="resultado">
 
-            </div>
-             <div class="margen"></div>
-              <div class="menu" id="menu">
-               
-              
-                <div class="row">
-                    
-                    <div class="col-xs-8 col-xs-offset-4 col-sm-3 col-sm-offset-9">
-                       
-                       <div class="row boton">
-                           
-                           <div class="col-xs-2">
-                                <div class="circulo fondoBlanco"><span class="icon-spinner9 colorNegro"></span></div>
-                               
-                           </div>
-                           <div class="col-xs-10 fila">
-                               <b>Actualizar Agenda</b>
-                           </div>
-                           
-                       </div>
-                        <div class="row">
-                           <a href="nuevo.html">
-                           <div class="col-xs-2">
+
+
+                <div class="col-xs-8">
+
+                    <div class="menu fixed fondoRojo">
+                        <div class="col-xs-2">
+                            <div class="circulo fondoBlanco boton"><span class="icon-spinner9 colorNegro"></span></div>
+
+                        </div>
+                        <div class="col-xs-10 fila colorBlanco boton">
+                            <b>Actualizar</b>
+                        </div>
+
+
+                        <a href="nuevo.html">
+                            <div class="col-xs-2 ">
                                 <div class="circulo fondoBlanco "><span class="icon-user-plus colorNegro"></span></div>
-                               
-                           </div>
-                           <div class="col-xs-10 fila">
-                               <b>Agregar Contacto</b>
-                           </div>
-                            </a>
-                           
-                       </div>
-                      
+
+                            </div>
+                            <div class="col-xs-10 fila colorBlanco">
+                                <b>Agregar</b>
+                            </div>
+                        </a>
+
                     </div>
+                    
+
                 </div>
+
+
+
+
             </div>
-             <div class="col-xs-2 col-xs-offset-9 fixed">
-                <div class="circulo-big fondoRojo colorBlanco transparente fixed" id="clic">+</div>
+
+            <div class="contenido" id="resultado">
+
             </div>
+            <div class="margen"></div>
+
+
+
+
+
+
 
         </div>
 
@@ -75,19 +82,21 @@
 
             $(document).ready(function(){
 
-                $("#menu").animate({
+                $(".menu").animate({
                     height: 'hide'
                 });
 
             });
             $( "#clic" ).click(function() {
-                $( "#menu" ).animate({
+                $( ".menu" ).animate({
 
                     height: "toggle",
-                    
-            
+
+
                 });
             });
+            
+            
 
 
 
@@ -112,7 +121,7 @@
 
                         switch(j) {
                             case 0:
-                                clase="fondoNaranja";
+                                clase="fondoVerde";
                                 j++;
                                 break;
                             case 1:
@@ -120,21 +129,21 @@
                                 j++;
                                 break;
                             case 2:
-                                clase="fondoMorado";
-                                j++;
-                                break;
-                            case 3:
                                 clase="fondoRojo";
                                 j++;
                                 break;
+                            case 3:
+                                clase="fondoMorado";
+                                j++;
+                                break;
                             case 4:
-                                clase="fondoVerde";
+                                clase="fondoNaranja";
                                 j++;
                                 break;
 
                             case 5:
-                                clase="fondoNaranja"
-                                j=0;
+                                clase="fondoVerde"
+                                j=1;
                         } 
 
 
